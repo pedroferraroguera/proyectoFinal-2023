@@ -1,0 +1,326 @@
+.bg1{background: tomato;}
+.bg2{background: blue;}
+.bg3{background: violet;}
+.bg4{background: greenyellow;}
+.bg5{background: lightskyblue;}
+.bg6{background: black;}
+.bg7{background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(37,0,252,1) 100%);}
+.bg8{background: linear-gradient(0deg, rgba(37,0,252,1) 0%, rgba(0,0,0,1) 100%);}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif; /*cambio el tipo de letra */
+    background-color: #000000; /*cambio el color de fondo */
+    color: white; /*cambio el color de la letra*/
+    font-size: large;
+  }
+
+h1 {
+    font-family: 'Lexend Tera';
+    font-size: 50px;
+   
+}
+
+.perfil {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0,0,0);
+}
+
+.perfil div{
+    width: 40%;
+    margin: 5%;
+    padding: 10px;
+    box-sizing: border-box;
+  
+}
+
+.perfil div h2{
+    font-size: 30px;
+
+}
+
+.perfil div img{
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+.datos{
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.datos div{
+    width: 25%;
+    margin: 3%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #2600ff;
+    border-radius: 20px;
+    text-align: center;
+    font-size:x-large
+  
+}
+
+.datos div h3 {
+    margin: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fa-brands {
+    font-size: 40px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.fa-solid {
+    font-size: 40px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.fa-brands:hover{
+    opacity: 0.7;
+}
+
+.fa-solid:hover{
+    opacity: 0.7;
+}
+
+
+.datos div.redes {
+    text-align: center;
+    
+}
+
+.acerca {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.experiencia {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.foto {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto img {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.crypto {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+.nft {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nft img {
+    width: 20%;
+    margin: 1%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition-duration: 1s; 
+    transition-property: all;
+}
+
+.nft img:hover {
+    transform: scale(1.5) rotate(1turn); 
+    transform-origin: center;
+}
+
+footer {
+    
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+
+    
+}
+
+@media (max-width: 1000px) {
+    .perfil div img {
+        width: 100%;
+        text-align: center;
+    }
+    .perfil div {
+        width: 80%;
+    }
+
+
+}
+
+@media (max-width: 750px) {
+    .perfil div img {
+        width: 100%;
+        text-align: center;
+    }
+    .perfil div {
+        width: 80%;
+    }
+
+    .datos div {
+        width: 90%;
+    }
+
+    .nft img{
+        width: 40%;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .perfil div img {
+        width: 100%;
+        text-align: center;
+    }
+    .perfil div {
+        width: 80%;
+        
+    }
+
+    .perfil div h1{
+        font-size: 35px;
+    }
+
+    .perfil div h2{
+        font-size: 20px;
+    }
+
+
+    .datos div {
+        width: 90%;
+    }
+
+    .foto img{
+        width: 90%;
+    }
+
+    .nft img{
+        width: 80%;
+        text-align: center;
+    }
+
+
+
+}
+
+.form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form h2 {
+    padding: 30px;
+    text-align: center;
+}
+
+#formData {
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+
+#formData select{
+    width: 100%;
+    
+}
+
+#formData input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    
+}
+
+#formData textarea{
+    width: 100%;
+    resize: none;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+#formData>div{
+    margin-bottom: 2em;
+}
+
+.form input [type=submit]{
+    font-size: 200px;
+    background: tomato;
+}
+
+@media (max-width: 1000px){
+    .form {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 750px) {
+    .quien div {
+        width: 90%;
+    }
+    
+    .marcas div {
+        width: 10%;
+        border-radius: 1px;
+    }
+
+    .form {
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .quien div {
+        width: 90%;
+    }
+
+    .marcas div {
+        width: 10%;
+        border-radius: 1px;
+    }
+
+}
